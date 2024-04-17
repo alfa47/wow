@@ -1,0 +1,36 @@
+﻿.btn{
+    background-color: #808080;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color: #424242
+}
+
+
+.parallax {
+    /*Image located in the solutions folder with the code*/
+    background-image: url("/parallax.jpg");
+    /* Set a specific height */
+    min-height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-label{
+    font-weight:bold;
+}
