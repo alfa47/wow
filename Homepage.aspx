@@ -17,7 +17,8 @@
             <asp:Button ID="Activities" CssClass="btn" runat="server" Text="Login/Register" OnClick="Loginbtn_Click"  />
             <asp:Button ID="Button2" CssClass="btn" runat="server" Text="Login/Register" OnClick="Loginbtn_Click"  />
             <asp:Button ID="Button1" CssClass="btn" runat="server" Text="Login/Register" OnClick="Loginbtn_Click"  />
-            <asp:Button ID="LoginBtn" CssClass="btn" runat="server" Text="Login/Register" OnClick="Loginbtn_Click"  /> 
+            <asp:Button ID="LoginBtn" CssClass="btn" runat="server" Text="Login" OnClick="Loginbtn_Click"  /> 
+            <asp:Button ID="RegisterBtn" CssClass="btn" runat="server" Text="Register" OnClick="RegisterBtn_Click"  /> 
             </ul>     
         </nav>
         <div class="parallax"></div>
