@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="~/CSS/GeneralCSS.css" rel="stylesheet" />
+    <link href="~/CSS/GeneralCSS.css" rel="stylesheet" /> 
     <title>RZA Bookings</title>
 </head>
 <body>

@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminDashBoard.aspx.cs" Inherits="RZATest.AdminDashBoard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminDashBoard.aspx.cs" Inherits="RZASolution.AdminDashBoard" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Zoo Map</title>
-    <link rel="stylesheet" type="text/css" href="~/CSS/Dashboard.css" />
+    <!--<link rel="stylesheet" type="text/css" href="~/CSS/Dashboard.css" /> -->
 </head>
 <body>
     <div class="header">
@@ -27,14 +27,14 @@
             <asp:Button ID="LogoutBtn" runat="server" Text="Logout" OnClick="LogoutBtn_Click" CssClass="btn" />
         </div>
     </form>
-    <footer>
+        <footer>
         <ul class="footer-links">
-            <li><a href="About.aspx">About Us</a></li>
-            <li><a href="Contact.aspx">Contact</a></li>
-            <!-- Add more footer links as needed -->
+            <li><a href="AboutUS.aspx">About Us</a></li>
+            <li><a href="ContactUs.aspx">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="FAQ.aspx">FAQ</a></li>
         </ul>
-        <p>&copy; 2024 Zoo Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
-

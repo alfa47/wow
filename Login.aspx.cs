@@ -51,7 +51,6 @@ namespace RZASolution
         }
         private int AuthenticateUser(string username, string password)
         {
-            // Your connection string to the database
             // SQL query to retrieve user ID based on username and password
             string query = "SELECT UserID FROM Users WHERE [Username] = ? AND [Password] = ?";
 
