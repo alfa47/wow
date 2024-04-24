@@ -1,0 +1,109 @@
+﻿/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav {
+    text-align: center;
+}
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.parallax {
+    background-image: url('../Assets/parallax.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 20px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .footer-links li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+        .footer-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+/* Add CSS styles for the map placeholder */
+.map-placeholder {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .map-placeholder img {
+        max-width: 100%;
+        height: auto;
+    }
+/* CSS for descriptors */
+.descriptors {
+    margin-top: 20px;
+}
+
+    .descriptors h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .descriptors ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .descriptors li {
+        margin-bottom: 10px;
+    }
+
+        .descriptors li strong {
+            font-weight: bold;
+        }
