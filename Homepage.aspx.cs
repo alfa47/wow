@@ -22,5 +22,15 @@ namespace RZASolution
         {
             Response.Redirect("Register.aspx");
         }
+
+        protected void ZooMap_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Map.aspx");
+        }
+
+        protected void Educationvisit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

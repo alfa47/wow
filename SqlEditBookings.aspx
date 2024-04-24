@@ -9,34 +9,59 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="txtDate" runat="server" />
-            <asp:TextBox ID="txtUserID" runat="server" />
-            <asp:Button ID="Addrowbtn" runat="server" text="add" OnClick="Addrowbtn_Click" />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-                DataKeyNames="BookingID" ShowFooter="true"  OnRowEditing="GridView1_RowEditing" 
-                OnRowCancelingEdit="GridView1_RowCancelingEdit" 
-                OnRowUpdating="GridView1_RowUpdating" OnRowCommand="GridView1_RowCommand" OnRowDeleting="GridView1_RowDeleting"  >
-                <Columns>
-                    <asp:BoundField DataField="BookingID" HeaderText="BookingID" ReadOnly="true" />
-                    <asp:BoundField DataField="Date" HeaderText="Date" />
-                    <asp:BoundField DataField="UserID" HeaderText="UserID" />
-                    <asp:TemplateField HeaderText="Edit">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="lnkEdit" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"></asp:LinkButton>
-                        </ItemTemplate>
-                        <EditItemTemplate>
-                            
-                            <asp:LinkButton ID="lnkUpdate" runat="server" CausesValidation="True" CommandName="Update" Text="Update"></asp:LinkButton>
-                            <asp:LinkButton ID="lnkCancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"></asp:LinkButton>
-                        </EditItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Delete">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="lnkDelete" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" OnClientClick="return confirm('Are you sure you want to delete this record?');"></asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
-            </asp:GridView>
+            <h1>CRUD Operations</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>BookingID</th>
+                        <th>User ID</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <asp:Literal ID="litDataRows" runat="server"></asp:Literal>
+                </tbody>
+            </table>
+            <h2>Insert data</h2>
+            <div>
+                <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red"></asp:Label>
+            </div>
+            <div>
+                <label>Date:</label>
+                <asp:TextBox ID="txtDate" runat="server" TextMode="Date"></asp:TextBox>
+            </div>
+            <div>
+                <label>User ID:</label>
+                <asp:TextBox ID="txtUserID" runat="server" ></asp:TextBox>
+            </div>
+            <div>
+                <asp:Button ID="btnInsert" runat="server" Text="Insert" OnClick="btnInsert_Click" />
+            </div>
+            <h2>Insert data</h2>
+            <div>
+                <label>BookingID:</label>
+                <asp:TextBox ID="txtBookingIDEdit" runat="server" ></asp:TextBox>
+            </div>
+            <div>
+                <label>Date:</label>
+                <asp:TextBox ID="txtDateEdit" runat="server" TextMode="Date"></asp:TextBox>
+            </div>
+            <div>
+                <label>User ID:</label>
+                <asp:TextBox ID="txtUserIDEdit" runat="server" ></asp:TextBox>
+            </div>
+            <div>
+                <asp:Button ID="InsertEdit" runat="server" Text="Insert" OnClick="InsertEdit_Click" />
+            </div>
+
+            <h2>Remove data</h2>
+            <div>
+                <label>BookingID:</label>
+            <asp:TextBox ID="txtBookingID" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
+            </div>
         </div>
     </form>
 </body>
