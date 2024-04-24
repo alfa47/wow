@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace RZASolution
+namespace RZATest
 {
     public partial class Homepage : System.Web.UI.Page
     {
@@ -15,12 +15,12 @@ namespace RZASolution
         }
         protected void Loginbtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Default.aspx");
         }
 
         protected void RegisterBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Register.aspx");
+            Response.Redirect("About.aspx");
         }
     }
 }
