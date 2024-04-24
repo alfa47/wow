@@ -1,0 +1,110 @@
+﻿/* Dashboard.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    .header h1 {
+        margin: 0;
+    }
+
+/* Navigation menu */
+.nav {
+    margin-top: 20px;
+}
+
+    .nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+        .nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+            .nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            .nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: #555;
+            }
+
+                .nav ul li a:hover {
+                    background-color: #777;
+                }
+
+/* Style form buttons */
+#form1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    #form1 div {
+        margin-bottom: 20px;
+    }
+
+    #form1 .btn {
+        width: calc(100% - 40px); /* Adjust width to fill the page */
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #555;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 auto; /* Center the button */
+    }
+
+        #form1 .btn:hover {
+            background-color: #777;
+        }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .footer-links li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+        .footer-links li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+            .footer-links li a:hover {
+                text-decoration: underline;
+            }
