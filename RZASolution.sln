@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.6.33723.286
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RZASolution", "RZASolution\RZASolution.csproj", "{D4583D72-6AC9-43A8-ACBE-376CBBC4F441}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RZASolution", "RZASolution.csproj", "{C8A675B6-F444-4B75-B744-4015BF91746E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D4583D72-6AC9-43A8-ACBE-376CBBC4F441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4583D72-6AC9-43A8-ACBE-376CBBC4F441}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4583D72-6AC9-43A8-ACBE-376CBBC4F441}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4583D72-6AC9-43A8-ACBE-376CBBC4F441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A675B6-F444-4B75-B744-4015BF91746E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A675B6-F444-4B75-B744-4015BF91746E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A675B6-F444-4B75-B744-4015BF91746E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A675B6-F444-4B75-B744-4015BF91746E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BA022B0D-081D-4E68-8FE4-95443D554F03}
+		SolutionGuid = {C9A3152C-AB45-4558-B0FC-CEDA09B88109}
 	EndGlobalSection
 EndGlobal

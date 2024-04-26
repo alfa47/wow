@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminDashBoard.aspx.cs" Inherits="RZATest.AdminDashBoard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminDashBoard.aspx.cs" Inherits="RZASolution.AdminDashBoard" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,7 +14,7 @@
                 <li><a href="Home.aspx" class="btn">Home</a></li>
                 <li><a href="Animals.aspx" class="btn">Animals</a></li>
                 <li><a href="Map.aspx" class="btn">Map</a></li>
-                <!-- Add more navigation links as needed -->
+
             </ul>
         </div>
     </div>
@@ -31,7 +31,7 @@
         <ul class="footer-links">
             <li><a href="About.aspx">About Us</a></li>
             <li><a href="Contact.aspx">Contact</a></li>
-            <!-- Add more footer links as needed -->
+
         </ul>
         <p>&copy; 2024 Zoo Name. All rights reserved.</p>
     </footer>

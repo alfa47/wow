@@ -9,6 +9,24 @@ namespace RZASolution
 {
     public partial class Homepage : System.Web.UI.Page
     {
+        protected override void OnPreInit(EventArgs e)
+        {
+            base.OnPreInit(e);
+
+            if (Session["HighContrast"] != null && (bool)Session["HighContrast"])
+            {
+                string highContrastStyle = @"
+                <style>
+                    body { background-color: black; color: white; }
+                    a { color: yellow; }
+                </style>";
+                phCss.Controls.Add(new Literal { Text = highContrastStyle });
+            }
+                if (Session["LargeText"] != null && (bool)Session["LargeText"])
+            {
+                phCss.Controls.Add(new Literal { Text = "<style>body { font-size: larger; }</style>" });
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 

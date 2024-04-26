@@ -37,7 +37,7 @@
             <div>
                 <asp:Button ID="btnInsert" runat="server" Text="Insert" OnClick="btnInsert_Click" />
             </div>
-            <h2>Insert data</h2>
+            <h2>Edit data</h2>
             <div>
                 <label>BookingID:</label>
                 <asp:TextBox ID="txtBookingIDEdit" runat="server" ></asp:TextBox>

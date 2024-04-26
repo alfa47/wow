@@ -16,18 +16,69 @@ namespace RZASolution
         {
             if (Session["UserID"] == null)
             {
-                Session["UserID"] = 23;
+                Response.Redirect("Login.aspx");
             }
             if (!IsPostBack)
             {
-                // Initialize the calendar to show current date
                 Calendar1.SelectedDate = DateTime.Today;
             }
         }
 
+        protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
+        {
+            // Fetch booked dates and their corresponding booking counts from the database
+            Dictionary<DateTime, int> bookedDatesWithCounts = GetBookedDatesWithCountsFromDatabase();
+
+            // Check if the current date being rendered is in the booked dates dictionary
+            if (bookedDatesWithCounts.ContainsKey(e.Day.Date))
+            {
+                int bookingCount = bookedDatesWithCounts[e.Day.Date];
+
+                // Check if the booking count exceeds 5
+                if (bookingCount > 5)
+                {
+                    // Apply custom styling to indicate that the date is booked
+                    e.Cell.BackColor = System.Drawing.Color.Red;
+                    e.Cell.ForeColor = System.Drawing.Color.White;
+                }
+            }
+        }
+
+        private Dictionary<DateTime, int> GetBookedDatesWithCountsFromDatabase()
+        {
+            Dictionary<DateTime, int> bookedDatesWithCounts = new Dictionary<DateTime, int>();
+
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                string query = "SELECT [Date], COUNT(*) AS BookingCount FROM BookedDates GROUP BY [Date]";
+                OleDbCommand command = new OleDbCommand(query, connection);
+
+                connection.Open();
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    DateTime bookedDate = reader.GetDateTime(0);
+                    int bookingCount = reader.GetInt32(1);
+                    bookedDatesWithCounts.Add(bookedDate, bookingCount);
+                }
+            }
+
+            return bookedDatesWithCounts;
+        }
+
+
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
-            // Update the selected date label if needed
+            DateTime selectedDate = Calendar1.SelectedDate;
+            if (selectedDate <= DateTime.Today)
+            {
+                lblMessage.Text = "Date unavailable. Please select a future date.";
+            }
+            else
+            {
+                Response.Redirect($"HotelAvailability.aspx?date={selectedDate.ToString("yyyy-MM-dd")}");
+            }
         }
 
         protected void btnBook_Click(object sender, EventArgs e)
